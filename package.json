@@ -1,0 +1,76 @@
+{
+  "name": "vue-colors",
+  "displayName": "Vue Colors",
+  "description": "Indentify your Vue code easily!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:vue"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Vue Colors",
+      "properties": {
+        "vueColors.scriptColor": {
+          "type": "string",
+          "default": "rgba(36, 142, 237, 0.05)",
+          "description": "The background color of the javascript/typescript code (please use rgba only). Used for both line color and scrollbar color."
+        },
+        "vueColors.htmlColor": {
+          "type": "string",
+          "default": "rgba(69, 237, 108, 0.05)",
+          "description": "The background color of the HTML template code (please use rgba only). Used for both line color and scrollbar color."
+        },
+        "vueColors.cssColor": {
+          "type": "string",
+          "default": "rgba(255, 230, 0, 0.05)",
+          "description": "The background color of the CSS code (please use rgba only). Used for both line color and scrollbar color."
+        },
+        "vueColors.highlightLine": {
+          "type": "boolean",
+          "default": true,
+          "description": "Highlight the entire line using the specified colors."
+        },
+        "vueColors.highlightScrollbar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Highlight the right side of the scrollbar using the specified colors. (Colors will be slightly less transparent on the scrollbar to make it more visible)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.70.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
