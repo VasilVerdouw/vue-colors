@@ -4,7 +4,7 @@
   "publisher": "vasilverdouw",
   "description": "Highlight script, template and style in unique colors! Either the entire line or just the scrollbar.",
   "icon": "./icon.png",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -22,8 +22,7 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-    ],
+    "commands": [],
     "configuration": {
       "type": "object",
       "title": "Vue Colors",
