@@ -1,12 +1,20 @@
 {
   "name": "vue-colors",
   "displayName": "Vue Colors",
-  "description": "Indentify your Vue code easily!",
+  "publisher": "vasilverdouw",
+  "description": "Highlight script, template and style in unique colors! Either the entire line or just the scrollbar.",
+  "icon": "./icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.70.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VasilVerdouw/vue-colors"
+  },
   "categories": [
+    "Visualization",
+    "Themes",
     "Other"
   ],
   "activationEvents": [
@@ -22,28 +30,28 @@
       "properties": {
         "vueColors.scriptColor": {
           "type": "string",
-          "default": "rgba(36, 142, 237, 0.05)",
+          "default": "rgba(36, 142, 237, 0.10)",
           "description": "The background color of the javascript/typescript code (please use rgba only). Used for both line color and scrollbar color."
         },
         "vueColors.htmlColor": {
           "type": "string",
-          "default": "rgba(69, 237, 108, 0.05)",
+          "default": "rgba(69, 237, 108, 0.10)",
           "description": "The background color of the HTML template code (please use rgba only). Used for both line color and scrollbar color."
         },
-        "vueColors.cssColor": {
+        "vueColors.styleColor": {
           "type": "string",
-          "default": "rgba(255, 230, 0, 0.05)",
-          "description": "The background color of the CSS code (please use rgba only). Used for both line color and scrollbar color."
+          "default": "rgba(255, 230, 0, 0.10)",
+          "description": "The background color of the (S)CSS code (please use rgba only). Used for both line color and scrollbar color."
         },
         "vueColors.highlightLine": {
           "type": "boolean",
           "default": true,
-          "description": "Highlight the entire line using the specified colors."
+          "description": "Wether to highlight the entire line using the specified colors."
         },
         "vueColors.highlightScrollbar": {
           "type": "boolean",
           "default": true,
-          "description": "Highlight the right side of the scrollbar using the specified colors. (Colors will be slightly less transparent on the scrollbar to make it more visible)"
+          "description": "Wether to highlight the right side of the scrollbar using the specified colors. (Colors will be slightly less transparent on the scrollbar to make it more visible)"
         }
       }
     }

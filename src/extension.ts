@@ -5,11 +5,11 @@ import { Decorator } from './decorater';
 
 const scriptRegex = /<script.*?>[\s\S]*?<\/script>/g;
 const htmlRegex = /<template.*?>[\s\S]*?<\/template>/g;
-const cssRegex = /<style.*?>[\s\S]*?<\/style>/g;
+const styleRegex = /<style.*?>[\s\S]*?<\/style>/g;
 
 let scriptDecorator = new Decorator('script', scriptRegex);
 let htmlDecorator = new Decorator('html', htmlRegex);
-let cssDecorator = new Decorator('css', cssRegex);
+let styleDecorator = new Decorator('style', styleRegex);
 
 function decorate() {
     const activeEditor = vscode.window.activeTextEditor;
@@ -17,13 +17,13 @@ function decorate() {
 
     scriptDecorator.decorate(activeEditor);
     htmlDecorator.decorate(activeEditor);
-    cssDecorator.decorate(activeEditor);
+    styleDecorator.decorate(activeEditor);
 }
 
 function loadSettings() {
     scriptDecorator.loadSettings();
     htmlDecorator.loadSettings();
-    cssDecorator.loadSettings();
+    styleDecorator.loadSettings();
 }
 
 export function activate(context: vscode.ExtensionContext) {
@@ -41,5 +41,5 @@ export function activate(context: vscode.ExtensionContext) {
 export function deactivate() {
     scriptDecorator.dispose();
     htmlDecorator.dispose();
-    cssDecorator.dispose();
+    styleDecorator.dispose();
 }
