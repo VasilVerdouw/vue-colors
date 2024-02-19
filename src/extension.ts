@@ -24,6 +24,8 @@ function loadSettings() {
     scriptDecorator.loadSettings();
     htmlDecorator.loadSettings();
     styleDecorator.loadSettings();
+
+    decorate();
 }
 
 export function activate(context: vscode.ExtensionContext) {

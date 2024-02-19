@@ -8,9 +8,9 @@ Choose any colors to highlight either the entire line, the scrollbar or both!
 
 ## Features
 
-### Personalize your color
+### Personalize your colors
 
-Vue Colors supports any RGBA color
+Change your highlighting colors to whatever you like! Vue Colors supports any RGBA colors.
 
 ![Vue colors blue purple pink](images/vue-colors-blue-purple-pink.png)
 
@@ -36,7 +36,9 @@ Highlight either the entire line, the scrollbar or both!
 
 ### Works with any theme
 
-Vue Colors works with any theme, and will always be visible.
+Vue Colors works with any theme, and will always be visible!
+
+If you think the default colors dont match with your theme, you can always change them to your liking.
 
 *Theme: Light+*
 ![Vue colors on light plus](images/vue-colors-light-plus.png)
@@ -46,6 +48,12 @@ Vue Colors works with any theme, and will always be visible.
 
 *Theme: community material theme darker*
 ![Vue colors on community material theme darker](images/vue-colors-community-material-theme-darker.png)
+
+### Easily change any settings
+
+Use the VS Code settings menu to easily make Vue Colors exactly how you want it to be.
+
+![Vue colors settings](images/vue-colors-settings-demo.gif)
 
 ## Extension Settings
 
