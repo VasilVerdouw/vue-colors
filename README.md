@@ -8,6 +8,12 @@ Choose any colors to highlight either the entire line, the scrollbar or both!
 
 ## Features
 
+Vue Colors is meant to bring more clarity to your Vue documents. It highlights your Vue code based on functionality (script, template, style) and allows you to easily see where you are in your Vue documents. This enhances your productivity and makes it easier to navigate through (large) files. Additionally, it makes your code look more organized and visually appealing.
+
+Vue Colors is fully customizable, allowing you to change the colors to whatever you like, and choose what to highlight (the entire line, the scrollbar or both). The extension works with any number of `<template>`, `<script>` and `<style>` tags in any order!
+
+Any other feature requests? Please let me know by creating an issue on the [GitHub repository](https://github.com/VasilVerdouw/vue-colors/issues)!
+
 ### Personalize your colors
 
 Change your highlighting colors to whatever you like! Vue Colors supports any RGBA colors.
@@ -41,12 +47,15 @@ Vue Colors works with any theme, and will always be visible!
 If you think the default colors dont match with your theme, you can always change them to your liking.
 
 *Theme: Light+*
+
 ![Vue colors on light plus](images/vue-colors-light-plus.png)
 
 *Theme: Tomorrow Night Blue*
+
 ![Vue colors on tomorrow night blue](images/vue-colors-tomorrow-night-blue.png)
 
 *Theme: community material theme darker*
+
 ![Vue colors on community material theme darker](images/vue-colors-community-material-theme-darker.png)
 
 ### Easily change any settings
