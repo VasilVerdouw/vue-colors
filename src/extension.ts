@@ -4,7 +4,7 @@ import * as vscode from 'vscode';
 import { Decorator } from './decorater';
 
 const scriptRegex = /<script.*?>[\s\S]*?<\/script>/g;
-const htmlRegex = /<template.*?>[\s\S]*?<\/template>/g;
+const htmlRegex = /<template\b[^>]*>[\s\S]*<\/template>/g;
 const styleRegex = /<style.*?>[\s\S]*?<\/style>/g;
 
 let scriptDecorator = new Decorator('script', scriptRegex);
