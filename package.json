@@ -4,7 +4,7 @@
   "publisher": "vasilverdouw",
   "description": "Highlight script, template and style in unique colors! Either the entire line or just the scrollbar.",
   "icon": "./icon.png",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.70.0"
   },
