@@ -4,6 +4,6 @@ All notable changes to the "vue-colors" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## 1.2.0
 
-- Initial release
+Fix an issue with nested template tags not being decorated correctly
